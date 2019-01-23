@@ -1,0 +1,41 @@
+#projects{
+    background: url(../assets/img/road.jpg);
+    background-size: cover;
+    height: 700px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    color: gray;
+    margin-top: -55px;
+}
+
+#projects h1{
+    margin-left: 28px;
+    font-size: 55px;
+}
+
+.monster img{
+    height: 200px;
+    width: 150x;
+    margin-left: 300px;
+    margin-top: 200px;
+    animation: pulse 2s;
+    animation-iteration-count: infinite;
+}
+
+.storefront img{
+    height: 200px;
+    width: 300px;
+    margin-left: 575px;
+    margin-top: -225px;
+    animation: pulse 2s;
+    animation-iteration-count: infinite;
+}
+
+.api img{
+    height: 200px;
+    width: 300px;
+    margin-left: 1000px;
+    margin-top: -275px;
+    animation: pulse 2s;
+    animation-iteration-count: infinite;
+}
