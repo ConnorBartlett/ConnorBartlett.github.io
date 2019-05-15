@@ -46,7 +46,10 @@
     margin-left: 40%;
 }
 
-@media (max-width: 700px){
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3){
 
 
     .monster img{
