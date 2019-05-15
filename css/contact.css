@@ -4,7 +4,7 @@
 }
 
 #Contact form {
-    margin-left: 300px; 
+    margin-left: 25%; 
 }
 
 #Contact {
@@ -12,3 +12,9 @@
     background-color: var(--bageTwo);
 }
 
+
+@media (max-width: 400px) {
+#Contact label {
+    margin-right: 50%
+}
+}
