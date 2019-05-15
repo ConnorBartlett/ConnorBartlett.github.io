@@ -15,7 +15,7 @@
    text-decoration: underline;
 }
 
-@media (max-width: 400px){
+@media (max-width: 700px){
 
     .header{
         background: url('../assets/img/lake.jpg') no-repeat center;
