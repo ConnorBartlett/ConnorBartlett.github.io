@@ -15,11 +15,7 @@
    text-decoration: underline;
 }
 
-@media only screen 
-    and (width : 375px) 
-    and (height : 635px)
-    and (orientation : portrait)  
-    and (-webkit-device-pixel-ratio : 3){
+@media screen and (max-width: 900px){
 
     .header{
         background: url('../assets/img/lake.jpg') no-repeat center;
