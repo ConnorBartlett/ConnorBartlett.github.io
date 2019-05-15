@@ -14,8 +14,9 @@
 
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+    and (width : 375px) 
+    and (height : 635px)
+    and (orientation : portrait)  
     and (-webkit-device-pixel-ratio : 3) {
 #Contact label {
     margin-right: 50%
