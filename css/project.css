@@ -11,79 +11,309 @@
 #projects h1{
     margin-left: 28px;
     font-size: 55px;
+    text-align: center;
 }
 
-.monster img{
-    height: 200px;
+
+
+/****************************************************************************** Bike Client Flip Card ********************************************************************/
+.flip-card {
+    background-color: transparent;
     width: 300px;
-    margin-left: 15%;
-    margin-top: 200px;
-    animation: pulse 2s;
-    animation-iteration-count: infinite;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #D4CEC4;
+    color: black;
+    transform: rotateY(180deg);
+    font: 'montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+  .flip-card-img{
+    height: 100%;
+    width: 100%;
 }
 
-.storefront img{
-    height: 200px;
+
+  /**************************************************************************API flip card*********************************************************************************/
+
+  .api-card {
+    background-color: transparent;
     width: 300px;
+    height: 200px;
+    perspective: 1000px;
     margin-left: 40%;
-    margin-top: -225px;
-    animation: pulse 2s;
-    animation-iteration-count: infinite;
-}
+    margin-top: -14%;
+  }
+  
+  .api-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
 
-.api img{
-    height: 200px;
+  .api-card:hover .api-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .api-card-front, .api-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .api-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .api-card-back {
+    background-color: #D4CEC4;
+    color: black;
+    transform: rotateY(180deg);
+    font: 'montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+  .api-card-img {
+    height: 100%;
+    width: 100%;
+  }
+
+
+  /********************************************************Tune Talk Client Card*****************************************************************************************/
+  .tune-card {
+    background-color: transparent;
     width: 300px;
-    margin-left: 67%;
-    margin-top: -275px;
-    animation: pulse 2s;
-    animation-iteration-count: infinite;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 70%;
+    margin-top: -14%;
+  }
+  
+  .tune-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .tune-card:hover .tune-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .tune-card-front, .tune-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .tune-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .tune-card-back {
+    background-color: #D4CEC4;
+    color: black;
+    transform: rotateY(180deg);
+    font: 'montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+  .tune-card-img {
+    height: 100%;
+    width: 100%;
 }
 
-.bikebuilder img{
-    animation: pulse 2s;
-    animation-iteration-count: infinite;
-    margin-left: 40%;
-}
+@media (max-width: 900px){  
 
-@media (max-width: 900px){
+/****************************************************************************** Bike Client Flip Card MediaQ ***********************************************************/
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 20%;
+    margin-top: 8%;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #D4CEC4;
+    color: black;
+    transform: rotateY(180deg);
+    font: 'montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+  .flip-card-img{
+      height: 100%;
+      width: 100%;
+  }
 
 
-    .monster img{
-        height: 100px;
-        width: 200px;
-        margin-left: 15%;
-        margin-top: 15%;
-        animation: pulse 2s;
-        animation-iteration-count: infinite;
-    }
+/************************************************************************** API Flip Card MediaQ **********************************************************************/
 
-    .storefront img{
-        height: 100px;
-        width: 200px;
-        margin-left: 15%;
-        margin-top: 12%;
-        animation: pulse 2s;
-        animation-iteration-count: infinite;
-    }
+  .api-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 20%;
+    margin-top: 0%;
+  }
+  
+  .api-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
 
-    .api img{
-        height: 100px; 
-        width: 200px;
-        margin-left: 15%;
-        margin-top: 12%;
-        animation: pulse 2s;
-        animation-iteration-count: infinite;
-    }
+  .api-card:hover .api-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .api-card-front, .api-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .api-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .api-card-back {
+    background-color: #D4CEC4;
+    color: black;
+    transform: rotateY(180deg);
+    font: 'montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+  .api-card-img {
+    height: 100%;
+    width: 100%;
+  }
+
+
+      /********************************************************Tune Talk Client Card MediaQ********************************************************************************/
+  .tune-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin-left: 20%;
+    margin-top: 0%;
+  }
+  
+  .tune-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .tune-card:hover .tune-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .tune-card-front, .tune-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .tune-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .tune-card-back {
+    background-color: #D4CEC4;
+    color: black;
+    transform: rotateY(180deg);
+    font: 'montserrat', sans-serif;
+    font-size: 20px;
+  }
+
+  .tune-card-img {
+      height: 100%;
+      width: 100%;
+  }
     
-    .bikebuilder img{
-        animation: pulse 2s;
-        animation-iteration-count: infinite;
-        margin-left: 15%;
-        margin-top: 12%;
-        height: 100px;
-        width: 200px;
-    }
+
 
 
 }

@@ -55,9 +55,15 @@
 
 
   <!--HEADER-->
-  <section class="header">
-    <div class="headerOne">
-          <h1>Front End Developer</h1>
+  <section class="fog">
+    <div class="absolute-bg"></div>
+    <div class="fog-container">
+      <div class="fog-img fog-img-first"></div>
+      <div class="fog-img fog-img-second"></div>
+    </div>
+
+    <div class="title">
+      <h1>Front End Developer</h1>
     </div>
   </section>
   
@@ -67,7 +73,7 @@
   <section id='jumbotron'>
   <div class="jumbotron">
     <h1 class="display-4">About Me</h1>
-    <p class="lead">My entire life I have had an interest in computers, both hardware components as well as the software that controlled them. After some time exploring different educational and career opportunities, I decided to turn my passion for technology into a career and I began my training by attending Eleven Fifty Academy starting in January of 2019. During my time at Eleven Fifty, we began by developing a solid foundation with JavaScript and the logic behind it, as well as structuring the frameworks for both HTML and CSS. As our abilities solidified, we moved on to more complicated applications for these new found skills, such as full webpage development and API’s. I have found that I enjoy solving the logic puzzles inevitably brought with applying JavaScript in order to make a website interactive. </p>
+    <p class="lead">My entire life I have had an interest in computers, both hardware components as well as the software that controlled them. After some time exploring different educational and career opportunities, I decided to turn my passion for technology into a career and I began my training by attending Eleven Fifty Academy starting in January of 2019. After graduating from the Javascript front end development program at Eleven Fifty, I have continued my education at Indiana University South Bend as an Informatics major. </p>
     <hr class="my-4">
     <p>See the attached link below for my full resume </p>
     <a class="btn btn-dark btn-lg" href="./assets/img/may resume 2019.pdf" target="_blank" role="button">Full Resume</a>
@@ -80,31 +86,60 @@
   <section id="projects">
     <h1>Projects</h1>
 
-
-    <div class="monster">
-      <a href="https://tune-talk-client.herokuapp.com/home" target="_blank"><img src="./assets/img/tunetalk.jpg"></a>
+    <!--Bike Client Flip Card-->
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="./assets/img/bikeclient3.png" class="flip-card-img" alt="Avatar">
+        </div>
+        <div class="flip-card-back">
+          <p>Bike Builder</p> 
+          <p>React</p> 
+          <a class="btn btn-dark btn-lg" href="https://bikeclient.herokuapp.com/" target="_blank" role="button">View</a>
+        </div>
+      </div>
     </div>
 
-    <div class="storefront">
-      <a href="https://connorbartlett.github.io/storefront/" target="_blank"><img src="./assets/img/storefront.jpg"></a>
+    <!--Space X Api Flip Card-->
+    <div class="api-card">
+      <div class="api-card-inner">
+        <div class="api-card-front">
+          <img src="./assets/img/api.jpg" class="api-card-img" alt="Avatar">
+        </div>
+        <div class="api-card-back">
+          <p>Space X Api</p> 
+          <p>JS es6</p> 
+          <a class="btn btn-dark btn-lg" href="https://bartlettapi.firebaseapp.com" target="_blank" role="button">View</a>
+          <a class="btn btn-dark btn-lg" href="https://github.com/ConnorBartlett/apiproject" target="_blank" role="button">Github</a>
+        </div>
+      </div>
     </div>
 
-    <div class="api">
-      <a href="https://bartlettapi.firebaseapp.com" target="_blank"><img src="./assets/img/api.jpg"></a>
-    </div>
-
-    <div class="bikebuilder">
-      <a href="https://bikeclient.herokuapp.com/" target="_blank"><img src="./assets/img/bikebuilder2.jpg"></a>
+    <!--Tune Talk Flip Card-->
+    <div class="tune-card">
+      <div class="tune-card-inner">
+        <div class="tune-card-front">
+          <img src="./assets/img/tunetalk.jpg" class="tune-card-img" alt="Avatar">
+        </div>
+        <div class="api-card-back">
+          <p>Tune Talk Client</p> 
+          <p>Angular 7</p>
+          <p>Group Project</p> 
+          <a class="btn btn-dark btn-lg" href="http://tune-talk-client.herokuapp.com/home" target="_blank" role="button">View</a>
+          <a class="btn btn-dark btn-lg" href="https://github.com/ikolajm/Tune-Talk-Client" target="_blank" role="button">Github</a>
+        </div>
+      </div>
     </div>
 
 
   </section>
+  
 
     <!-- Contact -->
 
   <section id="Contact">
     <div class="container">
-      <h2 class="text-center text-uppercase">Contact Me</h2>
+      <h2 class="text-center">Contact Me</h2>
       <div class="row">
         <form action="https://formspree.io/BartlettConnorM@gmail.com" method="POST">
           <div class="control-group">
@@ -153,16 +188,12 @@
           </div>
           <div class="text-center">
             <div id="success"></div>
-            <button type="submit" class="btn btn-lg btn-black">
-              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-              Send Message
-            </button>
+            <button type="submit" class="btn btn-dark btn-lg"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>Send Message</button>
           </div>
         </form>
       </div>
     </div>
   </section>
-    
 
   <footer>Created By Connor Bartlett. Jan 2019
   </footer>
